@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.input_display {
+    width: 80%;
+    font-size: 30px;
+    padding: 5px;
+    transition: .5s;
+}
+
+.input_display:focus {
+    outline: none;
+}
+
+.keyboard {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.keyboard>button {
+    width: 50px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.keyboard>button:active {
+    background-color: #ededed;
+}
+
+.clear_btn {
+    width: 100px;
+}
+
+.lower_case {
+    text-transform: lowercase;
+}
+
+.keyboard > .toggle_case {
+    width: 150px;
+}
